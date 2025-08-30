@@ -63,7 +63,7 @@ const handler = async (m, { conn, usedPrefix: _p }) => {
     }
 
     let nombreBot = global.namebot || 'Bot'
-    let bannerFinal = 'https://iili.io/KJXN7yB.jpg'
+    let bannerFinal = 'https://qu.ax/nXGTW.jpeg'
 
     const botActual = conn.user?.jid?.split('@')[0]?.replace(/\D/g, '')
     const configPath = join('./JadiBots', botActual || '', 'config.json')
@@ -131,7 +131,7 @@ const handler = async (m, { conn, usedPrefix: _p }) => {
             title: nombreBot,
             body: "",
             thumbnailUrl: bannerFinal,
-            sourceUrl: "myapiadonix.vercel.app",
+            sourceUrl: "https://qu.ax/nXGTW.jpeg",
             mediaType: 1,
             renderLargerThumbnail: true
           },
