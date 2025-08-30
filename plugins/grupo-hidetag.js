@@ -3,7 +3,7 @@ import { generateWAMessageFromContent} from '@whiskeysockets/baileys';
 const handler = async (m, { conn, text, participants}) => {
   try {
     const users = participants.map(u => conn.decodeJid(u.id));
-    const sello = '\n\n— 〘 *Ghost Mode Supreme* 〙';
+    const sello = '\n\n— 〘 *Ash Bot Supreme* 〙';
 
     const q = m.quoted? m.quoted: m;
     const c = m.quoted? await m.getQuotedObj(): m;
