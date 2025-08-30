@@ -9,7 +9,7 @@ const Reg = /(.*)[.|] ?([0-9]+)$/i
 
 let handler = async function (m, { conn, text, usedPrefix, command }) {
   const who = m.mentionedJid?.[0] || (m.fromMe ? conn.user.jid : m.sender)
-  const pp = await conn.profilePictureUrl(who, 'image').catch(() => 'https://files.catbox.moe/xr2m6u.jpg')
+  const pp = await conn.profilePictureUrl(who, 'image').catch(() => 'https://qu.ax/nXGTW.jpeg')
   const user = global.db.data.users[m.sender]
   const name2 = await conn.getName(m.sender)
   const fecha = moment().tz('America/Tegucigalpa').toDate()
