@@ -5,7 +5,7 @@ import { createHash } from 'crypto'
 let handler = async (m, { conn }) => {
   const user = global.db.data.users[m.sender]
   const nombre = user.name || await conn.getName(m.sender)
-  const pp = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://files.catbox.moe/xr2m6u.jpg')
+  const pp = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://qu.ax/nXGTW.jpeg')
   const numero = PhoneNumber('+' + m.sender.replace(/[^0-9]/g, '')).getNumber('international')
   const fecha = moment().tz('America/Tegucigalpa')
   const sn = createHash('md5').update(m.sender).digest('hex').slice(0, 20)
